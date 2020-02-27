@@ -1,7 +1,54 @@
-body {
-    background-color: blueviolet;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Css Grids */
+.boxes{
+    padding: 2rem;
+} 
+
+.box1 {
+    background: gold;
+    grid-area: ;
+}
+.box2 {
+    background: gray;
+    grid-area: ;
+}
+.box3 {
+    background: greenyellow;
+    grid-area: ;
+}
+.box4 {
+    background: peru;
+    grid-area: ;
+}
+.box5 {
+    background: purple;
+    grid-area: ;
+
+}
+.box6 {
+    background: palegreen;
+    grid-area: ;
+
+}
+.box7 {
+    background: pink;
+    grid-area: ;
+
+}
+.box8 {
+    background: red;
+    grid-area: ;
+
 }
 
 .grid-container {
+    
     display: grid;
+    grid-template-columns: ;
+    grid-template-areas: ;
 }
