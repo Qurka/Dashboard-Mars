@@ -9,46 +9,163 @@
     padding: 2rem;
 } 
 
+.box0 {
+    background: grey;
+    grid-area: nav;
+}
+
 .box1 {
-    background: gold;
-    grid-area: ;
+    background: lightgrey;
+    grid-area: main-info;
 }
 .box2 {
-    background: gray;
-    grid-area: ;
+    background: lightgrey;
+    grid-area: main-info1;
 }
 .box3 {
-    background: greenyellow;
-    grid-area: ;
+    background: lightgrey;
+    grid-area: main-info2;
 }
 .box4 {
-    background: peru;
-    grid-area: ;
+    background: lightgrey;
+    grid-area: main-info3;
 }
+
 .box5 {
-    background: purple;
-    grid-area: ;
-
+   background: red; 
+   grid-area: vechicale-info;
 }
+
 .box6 {
-    background: palegreen;
-    grid-area: ;
+    background: rgb(113, 203, 255); 
+    grid-area: vechicale-info1;
 
-}
-.box7 {
-    background: pink;
-    grid-area: ;
+ }
 
-}
-.box8 {
-    background: red;
-    grid-area: ;
+ .box7 {
+    background: rgb(255, 110, 248);
+    grid-area: vechicale-info2;
+ 
+ }
 
-}
+ .box8 {
+    background: purple;
+    grid-area: marsian-info; 
+ }
 
-.grid-container {
-    
+ .box9 {
+     background: grey;
+     grid-area: foot;
+ }
+.grid-container {   
     display: grid;
-    grid-template-columns: ;
-    grid-template-areas: ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+    "nav nav"
+    "main-info main-info1"
+    "main-info2 main-info3"
+    "vechicale-info vechicale-info1"
+    "vechicale-info2 vechicale-info2" 
+    "marsian-info marsian-info"
+    "foot foot"      
+    ; 
+}
+
+/* Main CSS */
+body {
+    font-size: 62.5%;
+}
+
+/* header section */
+.logo {
+    width: 5rem;
+    height: auto;
+    display: flex; 
+}
+
+/* Circle Progress Bars */
+.progress-chart-fl {
+    display: flex;
+}
+
+.progress-chart-fl .chart-fl {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 110px;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.progress-chart-fl canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-chart-o {
+    display: flex;
+}
+
+.progress-chart-o .chart-o {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 110px;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.progress-chart-o canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-chart-f {
+    display: flex;
+}
+
+.progress-chart-f .chart-f {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 110px;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.progress-chart-f canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-chart-w {
+    display: flex;
+}
+
+.progress-chart-w .chart-w {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 110px;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.progress-chart-w canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interplanetary Transport System Interface (ITSI)</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.easypiechart.js"></script>
 </head>
 <body>
     <div class="grid-container">
-        <div class="boxes box1">1</div>
-        <div class="boxes box2">2</div>
-        <div class="boxes box3">3</div>
-        <div class="boxes box4">4</div>
-        <div class="boxes box5">5</div>
-        <div class="boxes box6">6</div>
-        <div class="boxes box7">7</div>
-        <div class="boxes box8">8</div>
+        <div class="boxes box0">
+        <!-- Navigation -->
+            <header>
+                <img class="logo" src="Images/SpaceX_Logo_Black.png" alt="Black spacex logo">
+            </header>
+        </div>
+        <!-- Main content items -->
+        <div class="boxes box1">
+            <h2>Fuel</h2>
+        <!-- Circle Progress Bar -->
+            <div class="progress-chart-fl">
+                <div class="chart-fl" data-percent="65">65%</div>
+            </div>    
+        </div>
+        <div class="boxes box2">
+            <h2>Oxygen O2</h2>
+            <!-- Circle Progress Bar -->
+            <div class="progress-chart-o">
+                <div class="chart-o" data-percent="80">80%</div>
+            </div>    
+        </div>
+        <div class="boxes box3">
+            <h2>Food</h2>
+             <!-- Circle Progress Bar -->
+             <div class="progress-chart-f">
+                <div class="chart-f" data-percent="71">71%</div>
+            </div>
+        </div>
+        <div class="boxes box4">
+            <h2>Water H2O</h2>
+            <!-- Circle Progress Bar -->
+            <div class="progress-chart-w">
+                <div class="chart-w" data-percent="70">70%</div>
+            </div>
+        </div>
+        <div class="boxes box5">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="boxes box6">6 Speed</div>
+        <div class="boxes box7">7 Time of Arrival</div>
+        <div class="boxes box8">8 Mars Population</div>
+        <div class="boxes box9"> footer</div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
