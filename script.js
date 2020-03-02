@@ -1,4 +1,5 @@
-// Circle progress bar
+// Circle progress bars
+
 $(function() {
     $('.chart-fl').easyPieChart({
         //your options goes here
@@ -35,6 +36,7 @@ $(function() {
     });
 });
 
+// Distance traveled line chart
 var ctx = document.getElementById('myChart');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -42,12 +44,78 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['1 Month', '2 Month', '3 Month', '4 Month', '5 Month', '6 Month',],
         datasets: [{
-            label: 'Distance Travlled',
+            label: 'Distance Travelled X 1.000.000 KM',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            data: [35, 84, 126, 160,]
+        }]
+    },
+
+     // Configuration options go here
+     options: {}
+});
+
+// Gauge Speed Meter
+var gauge3 = Gauge(
+    document.getElementById("gauge3"), {
+      max: 60000,
+      value: 38000
+    }
+  );
+
+// Countdown Timer
+
+function countdown (){
+    var now = new Date();
+    var eventDate = new Date(2020, 9, 23);
+
+    var currentTime = now.getTime();
+    var eventTime = eventDate.getTime();
+
+    var remTime = eventTime - currentTime;
+
+    var s = Math.floor(remTime / 1000);
+    var m = Math.floor(s / 60);
+    var h = Math.floor(m / 60);
+    var d = Math.floor(h / 24);
+
+    h %= 24;
+    m %= 60;
+    s %= 60;
+
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+
+    document.getElementById("days").textContent = d;
+    document.getElementById("days").innerText = d;
+
+    document.getElementById("hours").textContent = h;
+    document.getElementById("minutes").textContent = m;
+    document.getElementById("seconds").textContent = s;
+
+    setTimeout(countdown, 1000);
+}
+
+countdown();
+
+// Population
+
+var myBarChart = document.getElementById('myBarChart');
+var chart = new Chart(myBarChart, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['Earth', 'Mars', 'Moon'],
+        datasets: [{
+            label: 'Population X Million',
+            labelColor: 'grey',
+            backgroundColor: ['green','brown','grey'],
+            data: [7530, 10000, 3500,]
         }]
     },
 

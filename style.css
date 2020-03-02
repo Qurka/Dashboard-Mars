@@ -10,7 +10,7 @@
 } 
 
 .box0 {
-    background: grey;
+    background: rgb(59,59,59);
     grid-area: nav;
 }
 
@@ -32,29 +32,29 @@
 }
 
 .box5 {
-   background: red; 
+   background: lightgrey; 
    grid-area: vechicale-info;
 }
 
 .box6 {
-    background: rgb(113, 203, 255); 
+    background: lightgrey; 
     grid-area: vechicale-info1;
 
  }
 
  .box7 {
-    background: rgb(255, 110, 248);
+    background: lightgrey;
     grid-area: vechicale-info2;
  
  }
 
  .box8 {
-    background: purple;
+    background: lightgrey;
     grid-area: marsian-info; 
  }
 
  .box9 {
-     background: grey;
+     background: rgb(59,59,59);
      grid-area: foot;
  }
 .grid-container {   
@@ -80,7 +80,7 @@ body {
 
 /* header section */
 .logo {
-    width: 5rem;
+    width: 6rem;
     height: auto;
     display: flex; 
 }
@@ -169,3 +169,33 @@ body {
     top: 0;
     left: 0;
 }
+
+/* Gauge speed Chart */
+.gauge-container.three {
+}
+
+.gauge-container.three > .gauge > .dial {
+  stroke: #334455;
+  stroke-width: 2;
+}
+.gauge-container.three > .gauge > .value {
+  stroke: #C9DE3C;
+  stroke-width: 5;
+}
+.gauge-container.three > .gauge > .value-text {
+  fill: #C9DE3C;
+}
+ 
+
+/* Countdown Timer */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.countdown-info {
+    font-size: 3rem;
+}
+
+/* Population */

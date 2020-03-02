@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="jquery.easypiechart.js"></script>
+    <script src="dist/gauge.min.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -49,12 +50,37 @@
         <div class="boxes box5">
             <canvas id="myChart"></canvas>
         </div>
-        <div class="boxes box6">6 Speed</div>
-        <div class="boxes box7">7 Time of Arrival</div>
-        <div class="boxes box8">8 Mars Population</div>
-        <div class="boxes box9"> footer</div>
-    </div>
+        <div class="boxes box6">
+            <h2>Speed KM/H</h2>
+            <div id="gauge3" class="gauge-container three">
+              </div>
+        </div>
+        <div class="boxes box7">
+            <table class="countdown-container">
+                <tr>
+                    <td colspan="4" class="countdown-info">Mars Arrival Timer</td>
+                </tr>
+                <tr class="countdown-info">
+                    <td id="days">120</td>
+                    <td id="hours">4</td>
+                    <td id="minutes">12</td>
+                    <td id="seconds">22</td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+        </div>
+        <div class="boxes box8">
+            <canvas id="myBarChart"></canvas>
+        </div>
+        <div class="boxes box9">
 
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
