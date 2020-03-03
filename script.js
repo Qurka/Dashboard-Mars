@@ -3,7 +3,7 @@
 $(function() {
     $('.chart-fl').easyPieChart({
         //your options goes here
-        barColor: 'brown',
+        barColor: 'rgb(0, 90, 115)',
         scaleLength: 0,
         lineWidth: 10,
     });
@@ -12,7 +12,7 @@ $(function() {
 $(function() {
     $('.chart-o').easyPieChart({
         //your options goes here
-        barColor: 'blue',
+        barColor: 'rgb(175, 238, 238)',
         scaleLength: 0,
         lineWidth: 10,
     });
@@ -21,7 +21,7 @@ $(function() {
 $(function() {
     $('.chart-f').easyPieChart({
         //your options goes here
-        barColor: 'green',
+        barColor: 'rgb(142, 219, 0)',
         scaleLength: 0,
         lineWidth: 10,
     });
@@ -30,7 +30,7 @@ $(function() {
 $(function() {
     $('.chart-w').easyPieChart({
         //your options goes here
-        barColor: 'lightblue',
+        barColor: 'rgb(156, 211, 219)',
         scaleLength: 0,
         lineWidth: 10,
     });
@@ -47,7 +47,7 @@ var chart = new Chart(ctx, {
         labels: ['1 Month', '2 Month', '3 Month', '4 Month', '5 Month', '6 Month',],
         datasets: [{
             label: 'Distance Travelled X 1.000.000 KM',
-            backgroundColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(156, 97, 232)',
             borderColor: 'rgb(255, 99, 132)',
             data: [35, 84, 126, 160,]
         }]
@@ -113,8 +113,7 @@ var chart = new Chart(myBarChart, {
         labels: ['Earth', 'Mars', 'Moon'],
         datasets: [{
             label: 'Population X Million',
-            labelColor: 'grey',
-            backgroundColor: ['green','brown','grey'],
+            backgroundColor: ['rgb(115, 191, 0)','rgb(191, 108, 0)','grey'],
             data: [7530, 10000, 3500,]
         }]
     },
