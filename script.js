@@ -69,7 +69,7 @@ var gauge3 = Gauge(
 
 function countdown (){
     var now = new Date();
-    var eventDate = new Date(2020, 9, 23);
+    var eventDate = new Date(2020, 3, 23);
 
     var currentTime = now.getTime();
     var eventTime = eventDate.getTime();
